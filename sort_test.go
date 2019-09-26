@@ -1,4 +1,4 @@
-package quick_sort
+package quick
 
 import (
 	"math/rand"
@@ -21,9 +21,9 @@ var (
 
 func TestQuickSort(t *testing.T) {
 	
-	newStrArr := QuickSort(strArr, false)
-	newIntArr := QuickSort(intArr, false)
-	newFloatArr := QuickSort(floatArr, true)
+	newStrArr := Sort(strArr, false)
+	newIntArr := Sort(intArr, false)
+	newFloatArr := Sort(floatArr, true)
 	
 	for i, v1 := range newStrArr {
 		if !reflect.DeepEqual(v1, sortedStr[i]) {
@@ -52,7 +52,7 @@ func BenchmarkQuickSort(b *testing.B) {
 	}
 	
 	for i := 0; i < b.N; i++ {
-		QuickSort(randArr, true)
+		Sort(randArr, true)
 	
 	}
 	

@@ -1,4 +1,4 @@
-package quick_sort
+package quick
 
 import (
 	"reflect"
@@ -9,7 +9,7 @@ import (
 var asc = true
 
 // package entry point for external usage
-func QuickSort(arr []interface{}, ascending bool) []interface{} {
+func Sort(arr []interface{}, ascending bool) []interface{} {
 	asc = ascending
 	cloned := make([]interface{}, len(arr))
 	
