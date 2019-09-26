@@ -1,8 +1,8 @@
 # quick-sort
 An implementation of quick sort in golang
 ## quick start
-This package has a method for sorting which takes an slice of interface and returns sorted array.
-The default sort method sort is ASC , you would use the asc parameter of method as false for sorting in DESC mode.
+This package has a method for sorting which takes a slice of interface and returns sorted slice .
+The default sort method is ASC , you would use the asc parameter of method as false for sorting in DESC mode.
 ### Installation 
 get the package using go module :
 
